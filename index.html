@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Новости Беларуси</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      background: white;
+      padding: 15px 30px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: red;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    .main-article {
+      display: flex;
+      gap: 20px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .main-article img {
+      width: 300px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .main-article h1 {
+      margin-top: 0;
+      color: red;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .news-card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      transition: 0.2s;
+    }
+
+    .news-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .news-card h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background: white;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Новости Беларуси</div>
+  <nav>
+    <a href="#">Главная</a>
+    <a href="#">Политика</a>
+    <a href="#">Экономика</a>
+    <a href="#">Технологии</a>
+    <a href="#">Развлечения</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <div class="main-article">
+    <img src="onego.jpg" alt="OneGo">
+    <div>
+      <h1>Ютуб Блоггер OneGo признан ИНОАГЕНТОМ в Беларуси!</h1>
+      <p>
+        По данным источников, блоггер получил данный статус после публикации
+        ролика, в котором высказывался на тему картошки. Подробности не раскрываются,
+        однако ситуация вызвала широкий общественный резонанс.
+      </p>
+      <p>
+        Эксперты уже обсуждают последствия и возможное влияние на интернет-картошество.
+      </p>
+    </div>
+  </div>
+
+  <div class="news-grid">
+
+    <div class="news-card">
+      <h3>В Минске открыли кофейню с роботами</h3>
+      <p>Новая кофейня полностью обслуживается автоматикой и уже стала популярной.</p>
+    </div>
+
+    <div class="news-card">
+      <h3>Белорусские программисты создали игру за 24 часа</h3>
+      <p>Проект стал вирусным и набрал тысячи скачиваний.</p>
+    </div>
+
+    <div class="news-card">
+      <h3>Неожиданное похолодание удивило жителей</h3>
+      <p>Температура резко упала на 10 градусов за сутки.</p>
+    </div>
+
+    <div class="news-card">
+      <h3>В Гродно заметили необычное явление в небе</h3>
+      <p>Очевидцы делятся фото и видео странного свечения.</p>
+    </div>
+
+    <div class="news-card">
+      <h3>Запущен новый сервис доставки еды</h3>
+      <p>Обещают привозить заказы за 15 минут.</p>
+    </div>
+
+    <div class="news-card">
+      <h3>Школьник создал нейросеть для мемов</h3>
+      <p>Она генерирует шутки лучше людей — утверждают пользователи.</p>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Новости Беларуси
+</footer>
+
+</body>
+</html>
